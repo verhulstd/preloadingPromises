@@ -19,7 +19,7 @@ server.get("/", (req, res) => {
 
 server.get("/cocktails", async (req, res) => {
   const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=";
-  const letters = "abc";
+  const letters = "abcdefgh";
   const allData = await Promise.all(
     letters
       .split("")
